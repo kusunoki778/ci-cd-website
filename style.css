@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: #f4f6f9;
+  color: #333;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #ccc;
+  margin: 0 12px;
+  text-decoration: none;
+  position: relative;
+  font-size: 14px;
+}
+
+nav a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #4da3ff;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #4da3ff, #3a7bd5);
+  color: white;
+  padding: 80px 20px;
+  margin: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: auto;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+/* SECTION */
+section {
+  background: white;
+  margin: 30px 20px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  margin-bottom: 10px;
+}
+
+/* GRID PROJECT */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.card {
+  background: #f9fbfd;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid #4da3ff;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* FOOTER */
+footer {
+  background: #1e1e2f;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
