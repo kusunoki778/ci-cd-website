@@ -11,4 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
       el.style.transform = "translateY(0)";
     }, index * 150);
   });
+
+    const timeEl = document.getElementById("time");
+    if (timeEl) {
+    const now = new Date();
+    timeEl.textContent = now.toLocaleString();
+    }
 });

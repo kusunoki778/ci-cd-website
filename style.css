@@ -79,6 +79,33 @@ nav a:hover {
   line-height: 1.6;
 }
 
+/*  DEPLOY STATUS */
+.deploy-status {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  background: rgba(0,0,0,0.15);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: #00ff88;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #00ff88;
+}
+
+/* TIMESTAMP */
+.timestamp {
+  margin-top: 12px;
+  font-size: 13px;
+  opacity: 0.85;
+}
+
 /* SECTION */
 section {
   background: white;
